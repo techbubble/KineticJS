@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Holiday Card</title>
+
+    <!-- 
+    
+    CSS Stylesheets are used to control how a page looks. Below, we are loading a popular
+    library called Bootstrap.
+    
+    -->
+    
+    <!-- BEGIN: LOAD STYLESHEETS -->
+    <!-- Links for Bootstrap. Visit http://getbootstrap.com for more information -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+
+    <!-- Load custom stylesheet for this page -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- END: LOAD STYLESHEETS -->
+  </head>
+  <body>
+  
+    <!-- This is some simple HTML markup                                -->
+    <!-- h1 is where a headline will be displayed                       -->
+    <!-- div id="card" is where a card will be created using KineticJS  -->
+  
+    <div class="container">
+     <div class="jumbotron">
+        <h1></h1>
+        <div id="card"></div>
+      </div>
+    </div>
+
+    <!-- 
+    
+    This page uses several popular Javascript libraries: jQuery, Bootstrap and KineticJS.
+    The "script" elements below are used to load these libraries into the page.
+    
+    The "card-loader" script is a custom script that detects if a card is requested 
+    and displays it. If no card is requested, it displays a default card.
+    
+    You should not change the code below unless you have a good understanding of Javascript.
+    
+    -->
+
+    <!-- BEGIN: LOAD JAVASCRIPT LIBRARIES -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>  
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>    
+    <script src="//d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v4.7.4.min.js"></script>
+
+    <!-- Load script that displays requested card -->
+    <script src="assets/js/card-loader.js"></script>
+    <!-- END: LOAD JAVASCRIPT LIBRARIES -->
+  </body>
+</html>
